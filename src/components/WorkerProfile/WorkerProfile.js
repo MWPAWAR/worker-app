@@ -1,15 +1,16 @@
 import { inject, observer } from 'mobx-react';
 import { useEffect } from 'react';
 import { List } from 'antd';
-import { getFormattedPhoneNumber, getMiles } from '../utils';
+import { SyncOutlined } from '@ant-design/icons';
+import { getFormattedPhoneNumber, getMiles } from '../../utils';
 import styles from './WorkerProfile.module.css';
 
 const WorkerProfile = inject('userProfile')(observer(({ userProfile }) => {
   useEffect(() => {
     userProfile.fetchUserProfile();
-  }, []);
+  }, [userProfile]);
 
-  if (userProfile.showLoader) return <div>Loader</div>;
+  if (userProfile.showLoader) return <div className={styles.loaderContainer}><SyncOutlined spin /></div>;
 
   if (userProfile.apiFailure) return <div>Failed to load worker profile</div>;
 

@@ -1,27 +1,37 @@
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 h3 {
   font-weight: 700;
-  font-size: 14px;
 }
 
-.ant-card-body {
+p, div, h4, h3 {
+  font-size: 16px;
+}
+
+/* Some styles are embeded in antd library. Override them here */
+.jobDetailsCard .ant-card-body {
   padding: 0;
 }
 
-.ant-card-meta-title {
-  font-size: 16px;
+.jobDetailsCardMeta {
+  padding: 15px;
+}
+
+.jobDetailsCardMeta .ant-card-meta-title {
+  font-size: 20px;
   font-weight: 700;
 }
 
-.ant-card-meta-description {
+.jobDetailsCardMeta .ant-card-meta-description {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
   margin-bottom: 10px;
+}
+
+.navItem {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+li.navItem:last-child(2) {
+  float: right;
 }

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Card } from 'antd';
-import styles from './styles.module.css';
+import styles from './WorkerJobList.module.css';
 
 const { Meta } = Card;
 
 const WorkerJobListItem = ({ item }) => (
-  <Link to={`/worker-jobs/${item.jobId}`} state={{ jobItem: item }}>
+  <Link to={`/workerJobs/${item.jobId}`} state={{ jobItem: item }}>
     <Card
       className={styles.workerJobListItem}
       hoverable

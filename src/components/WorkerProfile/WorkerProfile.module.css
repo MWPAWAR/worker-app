@@ -1,0 +1,11 @@
+.profileContainer {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.loaderContainer {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

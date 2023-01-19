@@ -1,14 +1,9 @@
-.workerJobList {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
+.jobDetails {
+  margin-top: 20px;
 }
 
-.workerJobListItem {
-  width: 300px;
-  min-height: 250px;
-  padding: 10px;
-  margin: 10px;
+.jobDetailsContainer, .buttonContainer {
+  padding: 15px;
 }
 
 .distanceAndHourlyRateContainer {
@@ -27,11 +22,15 @@
 .distanceLabel {
   width: 50%;
   text-align: left;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .hourlyRateLabel {
   width: 50%;
   text-align: right;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .distanceValue {
@@ -48,10 +47,6 @@
   font-weight: 700;
   width: 50%;
   text-align: right;
-}
-
-.jobDetails {
-  padding: 20px;
 }
 
 .requirementUlList {
@@ -73,6 +68,35 @@
   margin-right: 15px;
 }
 
-:global(.ant-card-body) {
-  padding: 0px
+.locationArrowIcon {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.locationAddress {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.locationCopy {
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 25;
+}
+
+.loaderContainer {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shiftTime {
+  text-transform: uppercase;
+}
+
+.resultContainer {
+  text-align: center;
 }

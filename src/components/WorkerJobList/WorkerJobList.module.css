@@ -1,0 +1,23 @@
+.workerJobList {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .workerJobList {
+    flex-direction: row;
+  }
+}
+
+.workerJobListItem {
+  min-height: 250px;
+  margin: 10px;
+}
+
+.loaderContainer {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+.navMenu {
+  padding-left: 50px;
+}
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 0 24px 16px 0;
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+  cursor: pointer;
+}

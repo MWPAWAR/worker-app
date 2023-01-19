@@ -3,9 +3,17 @@
 }
 
 .contentContainer {
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+  .contentContainer {
+    width: 70%;
+    min-height: 100vh;
+    margin: auto;
+  }
 }
 
 .header {

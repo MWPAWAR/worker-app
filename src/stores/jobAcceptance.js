@@ -37,6 +37,14 @@ const jobAcceptance = observable({
         this.apiRejectFailure = true;
         this.showLoader = false;
       })
+  },
+
+  reset() {
+    this.apiAcceptFailure = false;
+    this.apiAcceptSuccess = false;
+    this.apiRejectFailure = false;
+    this.apiRejectSuccess = false;
+    this.showLoader = false;
   }
 });
 
