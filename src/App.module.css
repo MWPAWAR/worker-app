@@ -1,4 +1,16 @@
-.mainContainer {
+.layoutContainer {
+  min-height: 100vh;
+}
+
+.contentContainer {
   width: 80%;
+  min-height: 100vh;
   margin: auto;
+}
+
+.header {
+  position: 'sticky';
+  top: 0;
+  z-index: 1;
+  width: '100%';
 }

@@ -3,13 +3,15 @@ import { Layout } from 'antd';
 import WorkerJobList from './components/WorkerJobList';
 import WorkerJobDetails from './components/WorkerJobDetails';
 import WorkerProfile from './components/WorkerProfile';
+import WorkerAppHeader from './components/WorkerAppHeader';
+import styles from './App.module.css';
 
 const { Header, Content } = Layout;
 
 const App = () => (
-  <Layout>
-    <Header>Header</Header>
-    <Content>
+  <Layout className={styles.layoutContainer}>
+    <Header className={styles.header}><WorkerAppHeader /></Header>
+    <Content className={styles.contentContainer}>
       <Routes>
         <Route path="/profile" element={<WorkerProfile />} />
         <Route path="/worker-jobs" element={<WorkerJobList />} />
